@@ -1,0 +1,75 @@
+/* Dropdown */
+.dropdownBtn {
+  padding: 0.08em;
+  font-size: 2em;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dropdownBtn:hover, .dropdownBtn:focus {
+ /* background-color: rgb(241, 241, 241); */
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 10em;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdownContent a {
+  color: black;
+  padding: 0.7em 1em;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdownContent a:hover {background-color: #ddd;}
+
+.dropdownRight .dropdownContent {
+  right: 0;
+  left: auto; 
+}
+
+.show {display:block;}
+
+
+
+/* Fonte */
+.fs-3{
+  font-size: 18pt;
+}
+
+
+/* Cores */
+.bg-white{
+  background-color: white;
+}
+
+.color-black{
+  color: black;
+}
+
+/* Bordas */
+.border-0{
+  border: none;
+}
+
+/* Buttons */
+.btn{
+    cursor: pointer;
+    min-width: 2em;
+}
+
+.btn:hover, .btn-focus{
+  background-color: ;
+}
