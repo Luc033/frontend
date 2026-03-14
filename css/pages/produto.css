@@ -4,3 +4,12 @@
   grid-template-columns: 1fr 0.3fr 0.3fr 0.3fr;
     border-bottom: 1px solid black;
 }
+
+
+.img-cadastro-produto{
+  width: 25%;
+  border: 5px dashed rgb(109, 180, 180);
+  border-radius: 50%;
+  padding: 2px;
+  background-color: ;
+}

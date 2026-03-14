@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/global/global.css" />
+    <link rel="stylesheet" href="/css/global/reset.css" />
+    <link rel="stylesheet" href="/css/shared/componentes.css" />
+    <link rel="stylesheet" href="/css/shared/layout.css" />
+    <link rel="stylesheet" href="/css/pages/produto.css">
+
+    <title>Novo produto</title>
+  </head>
+  <body>
+    <div data-include="header.html"></div>
+
+    <main>
+     <section class="cadastro-produto d-flex flex-column gap-2 pt-4">
+         <img src="assets/molhotomate.png" alt="imagem" class="img-cadastro-produto">
+        <div class="d-flex flex-column gap-2 ai-flex-start border-1 p-2 w-90">
+            <h2 class="mb-2">Detalhes principais</h2>
+
+            
+            <div class="d-flex gap-4">
+            <div class="d-flex flex-column ai-flex-start gap-1">
+                <label for="inpNomeProduto">Nome do produto</label>
+                <input type="text" name="" id="inpNomeProduto" placeholder="Ex.: Arroz kg">
+            </div>
+            
+            <div class="d-flex flex-column ai-flex-start gap-1">
+                <label for="selectCategoria">Categoria</label>
+                <select class="w-100" name="" id="selectCategoria">
+                    <option value="arroz">Arroz</option>
+                    <option value="feijao">Feijão</option>
+                    <option value="legumes">Legumes</option>
+                </select>
+            </div>  
+            </div>          
+        </div>
+
+        <div class="d-flex flex-column gap-2 ai-flex-start border-1 p-2 w-90">
+            <h2 class="mb-2">Preço e Estoque</h2>
+
+            <div class="d-flex gap-4">
+                <div class="d-flex flex-column ai-flex-start gap-1">
+                    <label for="inpQtdAtual">Quantidade atual</label>
+                    <input type="number" name="" id="inpQtdAtual" placeholder="Ex.: 15">
+                </div>
+
+                <div class="d-flex flex-column ai-flex-start gap-1">
+                    <label for="inpQtdMin">Quantidade mínima ao mês</label>
+                    <input type="number" name="" id="inpQtdMin" placeholder="Ex.: 5">
+                </div>
+            </div>
+                
+            <div class="d-flex flex-column ai-flex-start gap-1">
+                <label for="inpCusto">Custo</label>
+                <input type="number" name="" id="inpCusto" placeholder="Ex.: R$ 12,20">
+            </div>            
+        </div>
+
+        <button type="button"> Salvar</button>
+
+     </section>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/2ca9804ec8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+    <script src="js/app.js" type="module"></script>
+  </body>
+</html>
