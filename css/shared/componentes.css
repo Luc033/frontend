@@ -7,13 +7,14 @@
   border-radius: 5px;
 }
 
-.dropdownBtn:hover, .dropdownBtn:focus {
- /* background-color: rgb(241, 241, 241); */
+.dropdownBtn:hover,
+.dropdownBtn:focus {
+  /* background-color: rgb(241, 241, 241); */
 }
 
-.dropdown{
-    position: relative;
-    display: inline-block;
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
 .dropdownContent {
@@ -21,7 +22,7 @@
   position: absolute;
   background-color: #f1f1f1;
   min-width: 10em;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   border-radius: 5px;
 }
@@ -33,43 +34,63 @@
   display: block;
 }
 
-.dropdownContent a:hover {background-color: #ddd;}
+.dropdownContent a:hover {
+  background-color: #ddd;
+}
 
 .dropdownRight .dropdownContent {
   right: 0;
-  left: auto; 
+  left: auto;
 }
 
-.show {display:block;}
-
-
+.show {
+  display: block;
+}
 
 /* Fonte */
-.fs-3{
+.fs-3 {
   font-size: 18pt;
 }
 
-
 /* Cores */
-.bg-white{
+.bg-white {
   background-color: white;
 }
 
-.color-black{
+.bg-green {
+  background-color: seagreen;
+}
+.color-black {
   color: black;
 }
 
 /* Bordas */
-.border-0{
+.border-0 {
   border: none;
 }
 
-/* Buttons */
-.btn{
-    cursor: pointer;
-    min-width: 2em;
+.border-1 {
+  border: 1px solid;
 }
 
-.btn:hover, .btn-focus{
-  background-color: ;
+/* Buttons */
+.btn {
+  cursor: pointer;
+  min-width: 2em;
+}
+
+.btn-add {
+  background-color: yellowgreen;
+  border: 1px solid olivedrab;
+  cursor: pointer;
+  min-width: 5em;
+  min-height: 2.5em;
+  box-shadow: 0px 0px 3px 1px rgba(0, 107, 5, 0.288);
+  border-radius: 2px;
+  color: rgb(0, 61, 23);
+  font-weight: bold;
+}
+
+.btn-add:hover, .btn-add:focus{
+  background-color: rgb(184, 231, 90);
 }
