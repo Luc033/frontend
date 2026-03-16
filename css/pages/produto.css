@@ -4,12 +4,28 @@
   grid-template-columns: 1fr 0.3fr 0.3fr 0.3fr;
     border-bottom: 1px solid black;
 }
-
+.div-img-cadastro{
+  width: 5em;
+  height: 5em;
+  border: 3px dashed rgb(109, 180, 180);
+  border-radius: 300%;
+  padding: 2px;
+  text-align: center;
+}
 
 .img-cadastro-produto{
-  width: 25%;
-  border: 5px dashed rgb(109, 180, 180);
+  width: 100%;
   border-radius: 50%;
-  padding: 2px;
-  background-color: ;
+  background-color: paleturquoise;
+}
+
+#btnSalvarProduto{
+  font-size: 13pt;
+  height: 3em !important; 
+  min-width: 6em;
+  max-width: 7em;
+}
+
+.container-white{
+ min-width: 90%;
 }

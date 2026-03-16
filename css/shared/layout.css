@@ -127,6 +127,11 @@ footer {
   padding-top: 2em;
 }
 
+.pt-5{
+  padding-top: 2em;
+}
+
+
 
 /* Margin */
 
@@ -147,6 +152,10 @@ footer {
   width: auto;
 }
 
+.w-50{
+  width: 50%;
+}
+
 .w-75{
   width: 75%;
 }
@@ -157,4 +166,29 @@ footer {
 
 .w-100{
   width: 100%;
+}
+
+/* Height */
+.h-auto{
+  height: auto;
+}
+
+.h-25{
+  height: 25%;
+}
+
+.h-50{
+  height: 50%;
+}
+
+.h-75{
+  height: 75%;
+}
+
+.h-90{
+  height: 90%;
+}
+
+.h-100{
+  height: 100%;
 }

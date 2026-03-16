@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="/css/global/reset.css" />
     <link rel="stylesheet" href="/css/shared/componentes.css" />
     <link rel="stylesheet" href="/css/shared/layout.css" />
-    <link rel="stylesheet" href="/css/pages/produto.css">
+    <link rel="stylesheet" href="/css/pages/produto.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
     <title>Novo produto</title>
   </head>
@@ -15,53 +18,96 @@
     <div data-include="header.html"></div>
 
     <main>
-     <section class="cadastro-produto d-flex flex-column gap-2 pt-4">
-         <img src="assets/molhotomate.png" alt="imagem" class="img-cadastro-produto">
-        <div class="d-flex flex-column gap-2 ai-flex-start border-1 p-2 w-90">
-            <h2 class="mb-2">Detalhes principais</h2>
-
-            
-            <div class="d-flex gap-4">
-            <div class="d-flex flex-column ai-flex-start gap-1">
-                <label for="inpNomeProduto">Nome do produto</label>
-                <input type="text" name="" id="inpNomeProduto" placeholder="Ex.: Arroz kg">
-            </div>
-            
-            <div class="d-flex flex-column ai-flex-start gap-1">
-                <label for="selectCategoria">Categoria</label>
-                <select class="w-100" name="" id="selectCategoria">
-                    <option value="arroz">Arroz</option>
-                    <option value="feijao">Feijão</option>
-                    <option value="legumes">Legumes</option>
-                </select>
-            </div>  
-            </div>          
+      <section class="cadastro-produto d-flex flex-column gap-3 pt-4">
+        <div class="div-img-cadastro">
+          <img
+            src="assets/molhotomate.png"
+            alt="imagem"
+            class="img-cadastro-produto"
+          />
         </div>
 
-        <div class="d-flex flex-column gap-2 ai-flex-start border-1 p-2 w-90">
-            <h2 class="mb-2">Preço e Estoque</h2>
+        <div class="container-white">
+          <h2 class="mb-2 color-deepblue fw-bold"><i class="fa-solid fa-circle-info"></i> Detalhes principais</h2>
 
-            <div class="d-flex gap-4">
-                <div class="d-flex flex-column ai-flex-start gap-1">
-                    <label for="inpQtdAtual">Quantidade atual</label>
-                    <input type="number" name="" id="inpQtdAtual" placeholder="Ex.: 15">
-                </div>
-
-                <div class="d-flex flex-column ai-flex-start gap-1">
-                    <label for="inpQtdMin">Quantidade mínima ao mês</label>
-                    <input type="number" name="" id="inpQtdMin" placeholder="Ex.: 5">
-                </div>
+          <div class="d-flex jc-space-between">
+            <div class="input-container">
+              <label class="input-label" for="inpNomeProduto">Nome do produto</label>
+              <input class="input-white" type="text"name=""id="inpNomeProduto" placeholder="Ex.: Arroz kg"/>
             </div>
-                
-            <div class="d-flex flex-column ai-flex-start gap-1">
-                <label for="inpCusto">Custo</label>
-                <input type="number" name="" id="inpCusto" placeholder="Ex.: R$ 12,20">
-            </div>            
+
+            <div class="input-container">
+              <label class="input-label" for="selectCategoria">Categoria</label>
+              <select class="select-white w-100" name="" id="selectCategoria">
+                <option value="arroz">Arroz</option>
+                <option value="feijao">Feijão</option>
+                <option value="legumes">Legumes</option>
+              </select>
+            </div>
+          </div>
         </div>
 
-        <button type="button"> Salvar</button>
+        <div class="container-white">
+          <h2 class="mb-2 color-green fw-bold"><i class="fa-regular fa-money-bill-1"></i> Preço e Estoque</h2>
 
-     </section>
+          <div class="d-flex jc-space-between">
+            <div class="input-container">
+              <label class="input-label" for="inpQtdAtual">Quantidade atual</label>
+              <input
+                class="input-white w-50 "
+                type="number"
+                name=""
+                id="inpQtdAtual"
+                placeholder="Ex.: 15"
+                min="0"
+              />
+            </div>
+
+            <div class="input-container">
+              <label class="input-label" for="inpQtdMin">Quantidade mínima</label>
+              <input
+                class="input-white w-50"
+                type="number"
+                name=""
+                id="inpQtdMin"
+                placeholder="Ex.: 5"
+                min="0"
+              />
+            </div>
+          </div>
+
+          <div class="input-container">
+            <label class="input-label" for="inpCusto">Custo</label>
+            <input
+              class="input-white w-75"
+              type="number"
+              name=""
+              id="inpCusto"
+              placeholder="Ex.: R$ 12,20"
+            />
+          </div>
+        </div>
+
+                <div class="container-white">
+          <h2 class="mb-2 color-gray fw-bold"><i class="fa-solid fa-sliders"></i> Ajustes</h2>
+
+          <div class="d-flex gap-4 w-100">
+            <div class="input-container">
+              <label class="input-label w-100" for="inpNomeProduto">Incluir item na lista de compra automaticamente?</label>
+              <div class="radio-container">
+                  <input value="1" type="radio" name="habilitar-lista" id="inpHabilitarLista1" class="input-radio-white">
+                  <label for="inpHabilitarLista1" class="radio-label">Sim</label>
+              </div>
+              <div class="radio-container">
+                  <input value="0" type="radio" name="habilitar-lista" id="inpHabilitarLista0" class="input-radio-white" checked>
+                  <label for="inpHabilitarLista0" class="radio-label">Não</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button id="btnSalvarProduto" class="btn-add" type="button"> <i class="fa-solid fa-floppy-disk"></i> Salvar</button>
+      </section>
     </main>
 
     <script
