@@ -390,8 +390,7 @@
   
   padding: 1em;
   border-radius: 5px;
-  box-shadow:2px 4px 3px 0px #0000003b, inset 2px 2px 3px 0px #0000004d;
-  /* box-shadow:  0 0 0 4px rgba(216, 216, 216, 0.15), 0 4px 6px rgba(0, 0, 0, 0.05); */
+  box-shadow: 3px 3px 3px 1px #0000000d, inset 2px 2px 3px 0px #00000021;
 }
 
 
@@ -405,8 +404,17 @@
 
 .a-default{
   text-decoration: none;
-  color: none;
+  color: black;
 }
 .a-default:visited{
+  color: black;
+}
+.a-default:link{
+  color: none;
+}
+.a-default:hover{
+  color: none;
+}
+.a-default:active{
   color: none;
 }

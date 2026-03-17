@@ -7,7 +7,7 @@
 
 #btnInluirProduto{
   text-decoration: none;
-  
+
 }
 
 .div-img-cadastro{
@@ -34,4 +34,11 @@
 
 .container-white{
  min-width: 90%;
+}
+
+.title-cadastro{
+  margin-bottom: 1em;
+  font-weight: 600;
+  padding-bottom: 0.5em;
+  border-bottom: 0.1px solid rgba(83, 83, 83, 0.37);
 }

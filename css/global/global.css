@@ -9,5 +9,5 @@ body {
     font-family: var(--fonte-principal);
     color: var(--cor-texto-principal);
     -webkit-font-smoothing: antialiased;
-    background-color: #fdfdfd;
+    background-color: #f1f5f9;
 }
